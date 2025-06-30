@@ -27,6 +27,11 @@ a:hover {
   width: 164px;
   height: 216px;
 }
+.logo-small {
+  height: 70px;
+  width: 50px;
+  float: right;
+}
 .nav-list {
   display: flex;
   gap: 110px;
@@ -91,7 +96,6 @@ a:hover {
 .fa-pinterest::before,
 .fa-snapchat-ghost::before,
 .fa-youtube::before {
-  content: "\f167"; /* Unicode for YouTube icon */
   right: 7px;
   bottom: 8px;
   position: relative;
@@ -245,4 +249,99 @@ a:hover {
   font-size: 2em;
   color: #2c3a36;
   margin-bottom: 20px;
+}
+.nav-list a.active {
+  color: #ffd351;
+  font-weight: bold;
+}
+.cta-tagline {
+  font-size: 1.2rem;
+  color: #2c3a36;
+  margin-bottom: 1rem;
+}
+.contact-section {
+  background-color: #faf9f6;
+  padding: 40px 20px;
+  font-family: "Segoe UI", sans-serif;
+  color: #2c3a36;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-btn {
+  background-color: #ffd351;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+  box-shadow: 5px 7px 9px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #5c786e;
+}
+
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .sliding-banner {
+    top: 65%;
+  }
+  #menu-title {
+    left: 30%;
+    top: 26px;
+  }
+  .footer {
+    height: 100%;
+  }
 }

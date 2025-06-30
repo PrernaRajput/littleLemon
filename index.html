@@ -4,6 +4,13 @@
     <title>Little Lemon</title>
     <link href="bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Little Lemon is a Mediterranean restaurant in Chicago offering fresh and authentic cuisine."
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -12,11 +19,6 @@
   <body>
     <header class="header">
       <div class="logo">
-        <!-- <img
-          src="./images/logo_small.png"
-          alt="Little Lemon Logo"
-          class="logo_small"
-        /> -->
         <img
           src="./images/logo-medium.png"
           alt="Little Lemon Logo"
@@ -25,10 +27,10 @@
       </div>
       <nav class="nav">
         <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -37,7 +39,7 @@
         <a href="#">
           <img
             src="./images/banner.jpg"
-            alt="Special Offer"
+            alt="Special Offer Banner"
             class="banner-img"
           />
         </a>
@@ -56,7 +58,11 @@
       <h2 id="menu-title">Our Menu</h2>
       <section class="cards" id="menu">
         <article class="card">
-          <img src="./images/falafel.jpg" alt="Falafel" class="card-img" />
+          <img
+            src="./images/falafel.jpg"
+            alt="Falafel Food Image"
+            class="card-img"
+          />
           <div class="card-content">
             <h2 class="card-title">Falafel <span class="badge">New</span></h2>
             <h6 class="card-subtitle">Price : $12.00</h6>
@@ -67,7 +73,7 @@
         <article class="card">
           <img
             src="./images/calamari.jpg"
-            alt="Fried Calamari"
+            alt="Fried Calamari Food Image"
             class="card-img"
           />
           <div class="card-content">
@@ -80,7 +86,7 @@
         <article class="card">
           <img
             src="./images/greekSalad.jpg"
-            alt="Greek Salad"
+            alt="Greek Salad Food Image"
             class="card-img"
           />
           <div class="card-content">
@@ -93,10 +99,16 @@
         </article>
       </section>
       <div class="cta">
+        <p class="cta-tagline">Skip the line – enjoy your favorites faster!</p>
         <button class="order-btn">Order Online</button>
       </div>
 
       <section id="about">
+        <img
+          src="./images/logo_small.png"
+          alt="Little Lemon Logo"
+          class="logo-small"
+        />
         <div class="about-container">
           <h2>About Little Lemon</h2>
           <p>
@@ -124,7 +136,55 @@
           </p>
         </div>
       </section>
+
+      <section class="banner">
+        <a href="#">
+          <img
+            src="./images/banner-bottom.jpg"
+            alt="Special Offer Banner"
+            class="banner-img"
+          />
+        </a>
+      </section>
+      <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p
+          >We’d love to hear from you! Reach out to us with any questions,
+          feedback, or reservations.</p
+        >
+        <form class="contact-form">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Your message..."
+            required
+          ></textarea>
+
+          <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+      </section>
     </main>
+
     <footer class="footer">
       <div class="footer-left">
         <img
